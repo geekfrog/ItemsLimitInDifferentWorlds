@@ -1,5 +1,5 @@
 # ItemsLimitInDifferentWorlds
-### 限制不同世界物品的使用
+### 限制物品在不同世界
 
 ##### [插件使用说明](https://github.com/geekfrog/ItemsLimitInDifferentWorlds/wiki/)
 ##### 构建地址:[http://ci.frog.gg/jenkins/job/ItemsLimitInDifferentWorlds/](http://ci.frog.gg/jenkins/job/ItemsLimitInDifferentWorlds/)
