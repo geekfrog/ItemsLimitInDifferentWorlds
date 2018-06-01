@@ -20,13 +20,47 @@ A世界的物品或方块只能在A世界使用，无法再B世界进行使用�
 
 - 支持定义哪个物品在哪几个世界能进行什么操作(放置、丢弃、合成等).
 
+#### 配置大致如下：
+
+#白名单模式 
+#不开启则为黑名单模式，即全服所有物品正常使用，只监控下列物品。
+#否则所有物品只能在本世界使用，下列物品进行特殊处理。
+whitelist: false
+items: 
+  i1:
+    type: STONE
+    meta:
+      meta-type: STONE
+      display-name: 石头
+      lore:
+      - 以上信息是通过插件命令的生成的，不是手填的。
+    limit:
+	  l1:
+	    action:
+		- all
+		worlds:
+		- world
+		- world2
+	  l2:
+		action:
+		- place #放置
+		- use #使用 如：吃等右键操作
+		- hand #放在手里 防止作为武器使用
+		- inventory #放在GUI容器、合成台、铁站、各种箱子等
+		- drop #丢弃
+	    worlds:
+		- world3
+		- world4
+
+
 #### 插件计划：
 
 加粗项已完成
 
 - 项目初始化
 - 配置文件相关
-- 限制功能
+- 物品限制功能
+- GUI化部分功能
 
 #### 使用统计：
 [https://bstats.org/plugin/bukkit/ItemsLimitInDifferentWorlds](https://bstats.org/plugin/bukkit/ItemsLimitInDifferentWorlds)
